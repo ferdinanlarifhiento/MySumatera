@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/text_margin">
+
+    <TextView
+        android:id="@+id/item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="item number"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gambarobjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/namaobjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="namaobjekwisata"
+            android:layout_toRightOf="@id/gambarobjek"/>
+        <TextView
+            android:id="@+id/ratingobjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ratingobjek"
+            android:layout_toRightOf="@id/gambarobjek"
+            android:layout_below="@id/namaobjek"/>
+        <TextView
+            android:id="@+id/biaya_kunjungan_objek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Kunjungan"
+            android:layout_toRightOf="@id/gambarobjek"
+            android:layout_below="@id/ratingobjek"/>
+        <TextView
+            android:id="@+id/biaya_perjalanan_objek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Perjalanan"
+            android:layout_toRightOf="@id/gambarobjek"
+            android:layout_below="@id/biaya_kunjungan_objek"/>
+        <TextView
+            android:id="@+id/deskripsiobjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="deskripsi objek"
+            android:layout_below="@id/gambarobjek"/>
+    </RelativeLayout>
+</LinearLayout>

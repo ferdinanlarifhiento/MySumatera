@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5pt"
+    tools:context=".MainActivity2"
+    android:scrollbars="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textAllCaps="false"
+        android:id="@+id/btnkembali"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10pt"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Depan"
+            android:textAllCaps="false"
+            android:layout_marginTop="25pt"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namadepan"
+            android:maxLength="100"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Belakang"
+            android:textAllCaps="false"
+            android:layout_marginTop="10pt"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namabelakang"
+            android:maxLength="100"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Email"
+            android:textAllCaps="false"
+            android:layout_marginTop="10pt"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kata Sandi"
+            android:textAllCaps="false"
+            android:layout_marginTop="10pt"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/password1"
+            android:maxLength="100"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulangi Kata Sandi"
+            android:textAllCaps="false"
+            android:layout_marginTop="10pt"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/password2"
+            android:maxLength="100"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:id="@+id/daftar"/>
+
+    </LinearLayout></RelativeLayout>
+</ScrollView>

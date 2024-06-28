@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:text="Log Out"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi_admin"
+        android:layout_marginLeft="30dp"
+        android:textSize="14pt"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_objek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_kelola_objek"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_pengguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_kelola_pengguna"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

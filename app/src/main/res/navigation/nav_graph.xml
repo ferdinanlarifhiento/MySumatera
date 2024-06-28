@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.mysumatera.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_admin_objek_wisata_list"
+            app:destination="@id/admin_objek_wisata_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.mysumatera.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_Data_Objek_Wisata"
+        android:name="com.example.mysumatera.Admin_Data_Objek_Wisata"
+        android:label="fragment_admin__data__objek__wisata"
+        tools:layout="@layout/fragment_admin__data__objek__wisata" />
+    <fragment
+        android:id="@+id/admin_objek_wisata_list"
+        android:name="com.example.mysumatera.admin_objek_wisata_list"
+        android:label="fragment_admin_objek_wisata"
+        tools:layout="@layout/fragment_admin_objek_wisata" >
+        <action
+            android:id="@+id/action_admin_objek_wisata_list_to_admin_Data_Objek_Wisata2"
+            app:destination="@id/admin_Data_Objek_Wisata" />
+    </fragment>
+    <fragment
+        android:id="@+id/wisatawan"
+        android:name="com.example.mysumatera.Wisatawan"
+        android:label="fragment_wisatawan"
+        tools:layout="@layout/fragment_wisatawan" >
+        <action
+            android:id="@+id/action_wisatawan_to_wisatawan_Info_Objek_Wisata"
+            app:destination="@id/wisatawan_Info_Objek_Wisata" />
+        <action
+            android:id="@+id/action_wisatawan_to_wisatawan_rencana_perjalanan_tersimpan"
+            app:destination="@id/wisatawan_rencana_perjalanan_tersimpan" />
+    </fragment>
+    <fragment
+        android:id="@+id/wisatawan_Info_Objek_Wisata"
+        android:name="com.example.mysumatera.Wisatawan_Info_Objek_Wisata"
+        android:label="fragment_wisatawan_info_objek_wisata"
+        tools:layout="@layout/fragment_wisatawan_info_objek_wisata" />
+    <fragment
+        android:id="@+id/wisatawan_rencana_perjalanan_tersimpan"
+        android:name="com.example.mysumatera.wisatawan_rencana_perjalanan_tersimpan"
+        android:label="fragment_wisatawan_rencana_perjalanan_tersimpan"
+        tools:layout="@layout/fragment_wisatawan_rencana_perjalanan_tersimpan" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mysumatera.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.mysumatera.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
+    <activity
+        android:id="@+id/mainActivity3"
+        android:name="com.example.mysumatera.MainActivity3"
+        android:label="activity_main3"
+        tools:layout="@layout/activity_main3" />
+</navigation>

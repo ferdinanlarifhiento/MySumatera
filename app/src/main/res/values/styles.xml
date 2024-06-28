@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Light mode theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light mode attributes here -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Dark mode theme -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- Customize your dark mode attributes here -->
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wisatawan_rencana_perjalanan_tersimpan"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#DCDCDC">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/daftar_rencana_perjalanan_tersimpan"
+        android:background="@drawable/rounded_background"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="9pt"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--RecyclerView-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/fragment_item_list"
+            android:layout_weight="0.7"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:id="@+id/btntambahobjekwisata"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Informasi Objek Wisata"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Membuat Rencana Perjalanan"
+                android:layout_toLeftOf="@id/btntambahobjekwisata"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

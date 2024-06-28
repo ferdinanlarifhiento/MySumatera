@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="num"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="Anggaran : "
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:text="Kota"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:paddingLeft="10dp"/>
+        <Button
+            android:id="@+id/btn_buka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Buka"/>
+        <LinearLayout
+            android:id="@+id/plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text7"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wisata 1"
+                android:textSize="8pt"
+                android:background="@drawable/rounded_background"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wisata 1"
+                android:textSize="8pt"
+                android:background="@drawable/rounded_background"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wisata 1"
+                android:textSize="8pt"
+                android:background="@drawable/rounded_background"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plan"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/ratingrecanaperjalanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating_rencana_tersimpan"
+                android:background="@drawable/rounded_background"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_weight="0.48"
+                android:layout_marginHorizontal="10dp"/>
+            <Button
+                android:id="@+id/btn_beri_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/beri_rating"
+                android:layout_weight="0.48"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

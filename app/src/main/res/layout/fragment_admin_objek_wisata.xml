@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_objek_wisata_list">
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/kembali"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_below="@id/btnkembali"
+        android:orientation="vertical">
+        <!--RecyclerView-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="250pt"
+            tools:listitem="@layout/fragment_objek_wisata_item_list" />
+        <Button
+            android:id="@+id/btntambahobjekwisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+" />
+    </LinearLayout>
+</RelativeLayout>
